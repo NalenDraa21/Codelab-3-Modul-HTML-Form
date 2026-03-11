@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        table, td, th {
+            border: 1px solid rgb(255, 255, 255);
+            border-collapse: collapse;
+            margin: auto;
+        
+        }
+    </style>
+</head>
+<body>
+    <h1 style="text-align: center;">Create Account</h1><br>
+    
+    <form action="/action_page.php">
+        <table>
+            <tr>
+                <td> 
+                    <input type="text" name="fname" id="fname" placeholder="First Name">
+                </td>
+                <td> 
+                    <input type="text" name="lname" id="lname" placeholder="Last Name">
+                </td>            
+            </tr> 
+            
+            <tr>
+                <td colspan="2">
+                    <select id="count" name="count" style="width: 100%; padding: 3px;">
+                        <option value="" >Country</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Japan">Japan</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="China">China</option>
+                    </select>
+                </td>
+            </tr>
+            
+            <tr>
+                <td> 
+                    <input type="email" name="email" id="email" placeholder="Email Address">
+                </td>
+                <td> 
+                    <input type="text" name="phonenumb" id="phonenumb" placeholder="Phone Number">
+                </td>            
+            </tr> 
+            
+            <tr>
+                <td> 
+                    <input type="password" name="passcode" id="passcode" placeholder="Password">
+                </td>
+                <td> 
+                    <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password">
+                </td>            
+            </tr> 
+            
+            <tr>
+                <td >
+                    <input type="checkbox" id="agree" name="terms" value="agree">
+                    <label for="agree">Terms and Conditions</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center; ">
+                    <input type="submit" value="CREATE">
+                </td>
+            </tr>
+        </table>
+    </form>
+    </body>
+</html>
